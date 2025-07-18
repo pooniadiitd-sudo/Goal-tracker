@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Goal Tracker</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Goal Tracker - Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="app">
-    <h1>Goal Tracker</h1>
-    <canvas id="progressChart" width="300" height="300"></canvas>
-    <div class="grid"></div>
-    <div class="summary">
-      Done: <span id="summaryDone">0</span>,
-      Rescheduled: <span id="summaryRescheduled">0</span>,
-      Missed: <span id="summaryMissed">0</span>
-    </div>
-    <button id="darkToggle">Toggle Dark Mode</button>
-    <input type="file" id="importFile" />
-    <button onclick="exportTasks('json')">Export JSON</button>
-    <button onclick="exportTasks('csv')">Export CSV</button>
-  </div>
+  <header><h1>📊 Goal Tracker - Dashboard</h1></header>
+  <main>
+    <section class="summary">
+      <h2>Weekly Summary</h2>
+      <canvas id="weeklyChart"></canvas>
+    </section>
+    <nav class="nav-buttons">
+      <a href="planner.html">📅 Planner</a>
+      <a href="history.html">📚 History</a>
+      <a href="settings.html">⚙️ Settings</a>
+    </nav>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="scripts.js"></script>
 </body>

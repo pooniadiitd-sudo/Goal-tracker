@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>⚙️ Settings</h1></header>
+  <main>
+    <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
+    <div>
+      <label>Export:</label>
+      <button onclick="exportData()">JSON</button>
+      <button onclick="exportCSV()">CSV</button>
+    </div>
+    <div>
+      <label>Import:</label>
+      <input type="file" onchange="importData(event)" />
+    </div>
+    <a href="index.html">← Back to Home</a>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
