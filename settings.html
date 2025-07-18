@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Settings</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header><h1>⚙️ Settings</h1></header>
+  <header>
+    <h1>Settings</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="planner.html">Planner</a>
+      <a href="history.html">History</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
   <main>
-    <label><input type="checkbox" id="darkModeToggle" /> Dark Mode</label>
-    <div>
-      <label>Export:</label>
-      <button onclick="exportData()">JSON</button>
-      <button onclick="exportCSV()">CSV</button>
-    </div>
-    <div>
-      <label>Import:</label>
-      <input type="file" onchange="importData(event)" />
-    </div>
-    <a href="index.html">← Back to Home</a>
+    <p>Customize your preferences here.</p>
   </main>
-  <script src="scripts.js"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>
